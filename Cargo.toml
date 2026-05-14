@@ -1,0 +1,20 @@
+[package]
+name = "wallpaper_chooser"
+version = "0.1.0"
+edition = "2024"
+description = "Choose images based on a few filters."
+
+[dependencies]
+clap = { version = "4.6.1", features = ["derive"] }
+clip = "0.1.1"
+fraction = "0.15.4"
+image = "0.25.10"
+rayon = "1.12.0"
+regex = "1.12.3"
+terminal_size = "0.4.4"
+unicode-width = "0.2.2"
+
+[profile.release]
+opt-level = 3
+strip = true
+lto = true
