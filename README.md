@@ -65,3 +65,25 @@ Options:
 ## Note
 
 By default the program will max out CPU usage for maximum speed and might break down other processes. You can pass `-t <number_of_thread>` to limit CPU usage.
+
+# Download
+
+Only Windows executable is provided. See [Releases](https://github.com/CarrieForle/wallpaper_chooser/releases).
+
+For other systems you need to compile the codes. See [Build](#Build).
+
+# Build
+
+Rust 2024 edition is required.
+
+```sh
+cargo build --release
+```
+
+## Run
+
+To run the code:
+
+```sh
+cargo run
+```
